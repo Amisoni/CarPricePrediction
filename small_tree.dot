@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="year <= 0.8\nmse = 115916337.7\nsamples = 193574\nvalue = 14635.5", fillcolor="#f9e0ce"] ;
+1 [label="fuel <= 0.4\nmse = 56802906.5\nsamples = 116611\nvalue = 9897.8", fillcolor="#fcf2eb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="year <= 0.7\nmse = 100654775.4\nsamples = 9624\nvalue = 19892.6", fillcolor="#f4cbae"] ;
+1 -> 2 ;
+3 [label="mse = 65560686.8\nsamples = 5632\nvalue = 16120.7", fillcolor="#f7dac5"] ;
+2 -> 3 ;
+4 [label="mse = 101781839.4\nsamples = 3992\nvalue = 25212.9", fillcolor="#f0b68d"] ;
+2 -> 4 ;
+5 [label="year <= 0.7\nmse = 43126327.1\nsamples = 106987\nvalue = 9002.6", fillcolor="#fdf6f1"] ;
+1 -> 5 ;
+6 [label="mse = 28146991.6\nsamples = 61435\nvalue = 6706.8", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="mse = 46633305.6\nsamples = 45552\nvalue = 12099.2", fillcolor="#fbeade"] ;
+5 -> 7 ;
+8 [label="drive <= 0.2\nmse = 120017035.6\nsamples = 76963\nvalue = 21802.9", fillcolor="#f3c4a2"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="fuel <= 0.4\nmse = 128183111.7\nsamples = 36069\nvalue = 26571.2", fillcolor="#efb184"] ;
+8 -> 9 ;
+10 [label="mse = 131630739.1\nsamples = 4672\nvalue = 38810.9", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="mse = 102065308.5\nsamples = 31397\nvalue = 24750.2", fillcolor="#f0b890"] ;
+9 -> 11 ;
+12 [label="drive <= 0.8\nmse = 75103151.0\nsamples = 40894\nvalue = 17599.2", fillcolor="#f6d4bc"] ;
+8 -> 12 ;
+13 [label="mse = 53881777.5\nsamples = 29878\nvalue = 15815.6", fillcolor="#f8dbc7"] ;
+12 -> 13 ;
+14 [label="mse = 100611182.0\nsamples = 11016\nvalue = 22395.5", fillcolor="#f2c19e"] ;
+12 -> 14 ;
+}
